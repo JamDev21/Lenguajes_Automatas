@@ -1,0 +1,15 @@
+digraph tree {
+    "BinOp(+)" [label="BinOp(+)"];
+    "Number(6)" [label="Number(6)"];
+    "BinOp(/)" [label="BinOp(/)"];
+    "BinOp(*)" [label="BinOp(*)"];
+    "Number(4)" [label="Number(4)"];
+    "Number(2)" [label="Number(2)"];
+    "Number(3)" [label="Number(3)"];
+    "BinOp(+)" -> "Number(6)" [dir=none];
+    "BinOp(+)" -> "BinOp(/)" [dir=none];
+    "BinOp(/)" -> "BinOp(*)" [dir=none];
+    "BinOp(/)" -> "Number(3)" [dir=none];
+    "BinOp(*)" -> "Number(4)" [dir=none];
+    "BinOp(*)" -> "Number(2)" [dir=none];
+}

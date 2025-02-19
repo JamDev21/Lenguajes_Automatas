@@ -1,0 +1,39 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> input
+Rule 1     input -> PHONE
+
+Terminals, with rules where they appear
+
+PHONE                : 1
+error                : 
+
+Nonterminals, with rules where they appear
+
+input                : 0
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . input
+    (1) input -> . PHONE
+
+    PHONE           shift and go to state 2
+
+    input                          shift and go to state 1
+
+state 1
+
+    (0) S' -> input .
+
+
+
+state 2
+
+    (1) input -> PHONE .
+
+    $end            reduce using rule 1 (input -> PHONE .)
+
